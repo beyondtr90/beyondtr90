@@ -90,20 +90,6 @@ const Modal = ({
     );
   }
 
-  if (error.status === 504){
-    return (
-      <div className={styles.modalOverlay}>
-      <div className={styles.modalContent}>
-        <h3>Tron ağı başarılı!</h3>
-        <p>Ödülünüz hesabınıza tanımlandı</p>
-        <button className={styles.Button} onClick={onClose}>
-          Kapat
-        </button>
-      </div>
-    </div>
-    );
-  }
-
   if (success) {
     return (
       <div className={styles.modalOverlay}>
